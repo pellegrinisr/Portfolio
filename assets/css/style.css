@@ -38,6 +38,13 @@ h4 {
 .btn  {
     background-color: #FF3D00;
 }
+.btn:hover {
+    background-color: #FF3D00;
+}
+span {
+    display: none;
+    color: red;
+}
 @media screen and (max-width: 900px) {
     .top-image {
         padding-top: 0;

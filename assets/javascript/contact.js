@@ -14,21 +14,42 @@ $(document).ready(function() {
 
     $('#submit').on('click', function(event) {
         event.preventDefault();
-
+        $('#submit').css('background-color', '#FF3D00');
+        var isValid = true;
         var userName = $('#name').val().trim();
         var userEmail = $('#email').val().trim();
         var userComment = $('#message').val().trim(); 
-        console.log(userName);
-
-        myDBRef.push().set({
-            name: userName,
-            email: userEmail,
-            comment: userComment
-        });
-
-        $('#name').val('');
-        $('#email').val('');
-        $('#message').val('');
+        if (userName === '') {
+            $('#name-error').css('display', 'inline');
+            isValid = false;
+        } else {
+            $('#name-error').css('display', 'none');
+        }
+        if (userEmail === '') {
+            $('#email-error').css('display', 'inline');
+            isValid = false;
+        } else {
+            $('#email-error').css('display', 'none');
+        }
+        if (userComment === '') {
+            $('#message-error').css('display', 'inline');
+            isValid = false;
+        } else {
+            $("#message-error").css('display', 'none');
+        }
+        if (isValid === true) {
+            myDBRef.push().set({
+                name: userName,
+                email: userEmail,
+                comment: userComment
+            });
+    
+            $('#name').val('');
+            $('#email').val('');
+            $('#message').val('');
+            $('.error').css('display', 'none');
+        }
+        
     });
 
     myDBRef.on('value', function(snapshot) {
