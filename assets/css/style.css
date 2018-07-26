@@ -2,7 +2,6 @@
     background-color: black;
 }
 .top-image {
-    padding-top: 15rem;
     width: 100%;
     margin: 0;
 
@@ -16,13 +15,7 @@
 h2 {
     color:#FF3D00;
 }
-.responsive-image {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-.hangman-pic, .giphy-pic, .quiz-pic, .travel-pic, .train-pic, .crystal-pic {
-
+.responsive-image, .hangman-pic, .giphy-pic, .quiz-pic, .travel-pic, .train-pic, .crystal-pic {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -35,4 +28,20 @@ h4 {
 }
 .project-names-one {
     margin-bottom: 5rem;
+}
+.headshot {
+    max-width: 10rem;
+    float: left;
+    padding-right: .5rem;
+}
+@media screen and (min-width: 680px) {
+    .top-image {
+        padding-top: 0;
+    }
+
+} 
+@media screen and (min-width: 900px) {
+    .top-image {
+        padding-top: 15rem;
+    }
 }
