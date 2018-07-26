@@ -38,6 +38,9 @@ h4 {
     .top-image {
         padding-top: 0;
     }
+    #logo {
+        font-size: 1rem;
+    }
 
 } 
 @media screen and (min-width: 900px) {
