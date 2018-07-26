@@ -8,13 +8,14 @@
     
      <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
         $(document).ready(function(){
             $('.parallax').parallax();
+            $('.sidenav').sidenav();
         });
     </script>
 </head>
@@ -24,6 +25,7 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#top-of-page" class="brand-logo"><p id='logo'>Stephen Pellegrini</p></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#services-section">Services</a></li>
                     <li><a href="#portfolio-section">Portfolio</a></li>
@@ -32,6 +34,13 @@
                 </ul>
             </div>
         </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#top-of-page">Home</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#portfolio-section">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
     <div class="parallax-container">
          <div class="parallax"><img class="top-image" src="assets/images/background.jpg"></div>
