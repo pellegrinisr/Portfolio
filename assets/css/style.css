@@ -35,7 +35,9 @@ h4 {
     float: left;
     padding-right: .5rem;
 }
-
+.btn  {
+    background-color: #FF3D00;
+}
 @media screen and (max-width: 900px) {
     .top-image {
         padding-top: 0;
