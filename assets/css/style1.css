@@ -1,0 +1,38 @@
+.nav-wrapper {
+    background-color: black;
+}
+.top-image {
+    padding-top: 15rem;
+    width: 100%;
+    margin: 0;
+
+}
+#logo{
+    margin: 0;
+}
+.nav-wrapper #nav-mobile li a:hover {
+    color: #FF3D00;
+}
+h2 {
+    color:#FF3D00;
+}
+.responsive-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.hangman-pic, .giphy-pic, .quiz-pic, .travel-pic, .train-pic, .crystal-pic {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-images-one, .project-images-two {
+    margin-bottom: 0;
+}
+h4 {
+    margin-top: 0;
+}
+.project-names-one {
+    margin-bottom: 5rem;
+}
