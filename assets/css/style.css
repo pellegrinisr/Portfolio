@@ -47,8 +47,8 @@ h4 {
     .top-image {
         padding-top: 0;
     }
-    #logo {
-       display: none;
+    a #logo {
+        font-size: 1rem;
     }
 
 } 
