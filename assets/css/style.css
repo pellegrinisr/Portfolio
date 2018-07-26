@@ -35,15 +35,8 @@ h4 {
     float: left;
     padding-right: .5rem;
 }
-@media screen and (min-width: 900px) {
-    .top-image {
-        padding-top: 15rem;
-    }
-    #logo {
-        display: inline;
-    }
-}
-@media screen and (min-width: 0px) {
+
+@media screen and (max-width: 900px) {
     .top-image {
         padding-top: 0;
     }
