@@ -8,6 +8,7 @@
 }
 #logo{
     margin: 0;
+    
 }
 .nav-wrapper #nav-mobile li a:hover {
     color: #FF3D00;
@@ -46,5 +47,8 @@ h4 {
 @media screen and (min-width: 900px) {
     .top-image {
         padding-top: 15rem;
+    }
+    #logo {
+        display: inline;
     }
 }
