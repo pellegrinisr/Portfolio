@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
-    
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
         $(document).ready(function(){
@@ -29,8 +29,8 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a class="services-link" href="#services-section">Services</a></li>
                     <li><a href="#portfolio-section">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -124,7 +124,7 @@
     <div class="section" id="about-section">
         <div class="row container">
             <h2 class="header about-header">About</h2>
-            <div class="col l12">
+            <div class="col s12">
                 <img class="headshot" src="assets/images/headshot.png" alt="Profile Picture">
                 <p class="grey-text text-darken-3">
                 My name is Stephen Pellegrini. I currently work in the IT department at Los Angeles
@@ -152,6 +152,35 @@
                 traveling, and writing code!
                 </p>
             </div> 
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img class="top-image" src="assets/images/background.jpg"></div>
+    </div>
+    <div class="section" id="contact-section">
+        <div class="row container">
+            <h2 class="header contact-header">Contact</h2>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="name" type="text" class="validate">
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">Message</label>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </body>
